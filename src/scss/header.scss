@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    position: sticky;
+    top: 0;
+    background-color: colors(white);
+    z-index: 1000;
+
+    .header_img_wrapper {
+        height: 6rem;
+        margin-left: 2.4rem;
+    }
+
+    .header_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header_navi {
+        display: flex;
+        margin-left: auto;
+        height: 100%;
+    }
+
+    .header_navi_item {
+        width: 12rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        color: colors(black_87);
+    }
+
+    .header_navi_contact {
+        width: 16rem;
+        background-color: colors(main_2);
+        margin-left: 1.6rem;
+    }
+}
