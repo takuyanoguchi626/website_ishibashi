@@ -1,4 +1,12 @@
-@charset 'utf-8';
+/* pc */
+@media screen and (min-width:768px) {}
+
+/* tb */
+@media screen and (min-width:768px) and (max-width:1279px) {}
+
+/* sp */
+@media screen and (max-width:767px) {}
+
 
 * {
     line-height: 160%;
@@ -6,37 +14,84 @@
 }
 
 .first_view {
-    background-image: url(../images/lower_page_bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
 
+    @media screen and (min-width:768px) {
+        background-image: url(../images/lower_page_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+
+    @media screen and (max-width:767px) {
+        background-image: url(../images/lower_page_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+    }
 }
 
 .first_view_title {
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 40px;
+    @media screen and (min-width:768px) {
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    @media screen and (max-width:767px) {
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 20px;
+    }
 }
 
 .first_view_title_mini {
+    @media screen and (max-width:767px) {
+
+        color: rgb(255, 255, 255, 0.5);
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    /* @media screen and (max-width:767px) { */
     color: rgb(255, 255, 255, 0.5);
     font-weight: 500;
     font-size: 16px;
+    /* } */
 }
 
 .company {
+    /* @media screen and (max-width:767px) { */
+
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 80px;
+    /* padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 240px;
+        padding-right: 240px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* } */
+
+    /* @media screen and (max-width:767px) {
     width: 100%;
     background-color: #f6f6f6;
     padding: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
+} */
 }
 
 .content {
