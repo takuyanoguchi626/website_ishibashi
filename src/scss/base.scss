@@ -12,6 +12,12 @@
     src: url("../../public/assets/fonts/NotoSansJP-Medium.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: 'Noto Serif JP';
+    font-weight: 500;
+    src: url("../../public/assets/fonts/NotoSerifJP-Medium.otf") format("woff2");
+}
+
 
 html {
     font-size: 62.5%;
