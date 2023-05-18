@@ -37,7 +37,7 @@ $breackpoints: (
 );
 
 @mixin mq($window) {
-    @media #{inspect(map-get($breackpoints,$window))} {
+    @media #{map-get($breackpoints, $window)} {
         @content;
     }
 }
