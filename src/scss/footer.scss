@@ -2,19 +2,39 @@
 
 
 .footer {
-    padding: 4rem;
     background-color: colors(footer_bg);
+
+    @include mq(pc) {
+        padding: 4rem;
+    }
+
+    @include mq(sp) {
+        padding: 1.6rem;
+    }
 
     .footer_upper_part {
         display: flex;
         align-items: center;
-        max-width: 128rem;
-        margin-right: auto;
-        margin-left: auto;
+
+        @include mq(pc) {
+            max-width: 128rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @include mq(sp) {
+            flex-direction: column;
+        }
     }
 
     .footer_img_wrapper {
-        width: 20rem;
+        @include mq(pc) {
+            width: 20rem;
+        }
+
+        @include mq(sp) {
+            width: 16rem;
+        }
     }
 
     .footer_img {
@@ -25,32 +45,67 @@
     .footer_navi {
         display: flex;
         align-items: center;
-        gap: 7.2rem;
-        margin-left: auto;
+
+        @include mq(pc) {
+            margin-left: auto;
+            gap: 7.2rem;
+        }
+
+        @include mq(sp) {
+            flex-direction: column;
+            gap: 2.4rem;
+            margin-top: 1.6rem;
+        }
     }
 
     .footer_navi_item {
-        font-size: px_vw(20px);
         color: colors(white);
+
+        @include mq(pc) {
+            font-size: px_vw(20px);
+        }
+
+        @include mq(sp) {
+            font-size: 1.4rem;
+        }
     }
 
     .footer_lower_part {
-        display: flex;
-        align-items: flex-end;
-        max-width: 128rem;
-        margin-top: 6rem;
-        margin-right: auto;
-        margin-left: auto;
+
+        @include mq(pc) {
+            display: flex;
+            align-items: flex-end;
+            max-width: 128rem;
+            margin-top: 6rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @include mq(sp) {
+            margin-top: 4rem;
+        }
     }
 
     .footer_address {
         font-size: px_vw(20px);
         color: colors(white);
+
+        @include mq(sp) {
+            display: none;
+        }
     }
 
     .footer_company {
-        margin-left: auto;
-        font-size: px_vw(20px);
         color: colors(white);
+
+        @include mq(pc) {
+            margin-left: auto;
+            font-size: px_vw(20px);
+        }
+
+        @include mq(sp) {
+            text-align: center;
+            font-size: 1.2rem;
+        }
     }
 }

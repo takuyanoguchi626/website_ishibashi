@@ -67,14 +67,13 @@
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: 0;
-        transform: translate(100%);
+        right: -16rem;
         transition: .4s;
         padding-top: 4.8rem;
         background-color: colors(main_2);
 
         &.is_active {
-            transform: translate(0);
+            transform: translate(-100%);
         }
 
         @include mq(pc) {
@@ -115,7 +114,7 @@
             width: 2.4rem;
             height: .2rem;
             position: relative;
-            transition: all .4s;
+            transition: .4s;
             background-color: colors(black_87);
 
             &::before {
@@ -124,7 +123,7 @@
                 height: .2rem;
                 position: absolute;
                 top: -.8rem;
-                transition: all .4s;
+                transition: .4s;
                 background-color: colors(black_87);
             }
 
@@ -134,7 +133,7 @@
                 height: .2rem;
                 position: absolute;
                 bottom: -.8rem;
-                transition: all .4s;
+                transition: .4s;
                 background-color: colors(black_87);
             }
 
