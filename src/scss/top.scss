@@ -215,49 +215,91 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 6rem 4rem;
         background-color: colors(white);
 
+        @include mq(pc) {
+            padding: 6rem 4rem;
+        }
+
+        @include mq(sp) {
+            padding: 2.4rem 1.6rem;
+        }
+
         .contact_title_jp {
-            font-size: px_vw(32px);
             font-weight: 500;
-            margin-top: 1.6rem;
+
+            @include mq(pc) {
+                font-size: px_vw(32px);
+                margin-top: 1.6rem;
+            }
+
+            @include mq(sp) {
+                margin-top: .8rem;
+                font-size: 1.6rem;
+            }
         }
 
         .contact_text {
-            font-size: px_vw(16px);
             text-align: center;
             color: colors(black_60);
-            margin-top: 4rem;
+
+            @include mq(pc) {
+                margin-top: 4rem;
+                font-size: px_vw(16px);
+            }
+
+            @include mq(sp) {
+                margin-top: 2.4rem;
+                font-size: 1rem;
+            }
         }
 
         .contact_button {
             display: flex;
             align-items: center;
-            gap: 3.2rem;
-            height: 7.2rem;
-            padding-left: 3.2rem;
-            padding-right: 3.2rem;
-            margin-top: 4rem;
             border-radius: 10rem;
             color: colors(white);
             background-color: colors(main_2);
+
+            @include mq(pc) {
+                gap: 3.2rem;
+                height: 7.2rem;
+                padding-left: 3.2rem;
+                padding-right: 3.2rem;
+                margin-top: 4rem;
+            }
+
+            @include mq(sp) {
+                gap: 2.4rem;
+                height: 5.6rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                margin-top: 2.4rem;
+            }
 
             &:hover {
                 opacity: .7;
             }
         }
 
-        .contact_button_icon {
-            font-size: 2rem;
-        }
-
         .contact_button_text {
-            font-size: 2rem;
+            @include mq(pc) {
+                font-size: 2rem;
+            }
+
+            @include mq(sp) {
+                font-size: 1.4rem;
+            }
         }
 
         .contact_button_arrow {
-            font-size: 2rem;
+            @include mq(pc) {
+                font-size: 2rem;
+            }
+
+            @include mq(sp) {
+                font-size: 1.4rem;
+            }
         }
     }
 }
